@@ -27,15 +27,7 @@ public class BreakAPlate
 		clicked = true;
 	}
 	
-	public boolean getClicked()
-	{
-		return clicked;
-	}
-	
-	public void setClicked(boolean input)
-	{
-		clicked = input;
-	}
+     
 	
 	/**
 	 * Launch the application.
@@ -66,19 +58,19 @@ public class BreakAPlate
 	private void initialize() 
 	{
 		frame = new JFrame();
-		frame.getContentPane().setBackground(Color.RED);
+		frame.getContentPane().setBackground(Color.LIGHT_GRAY);
 		frame.setBounds(100, 100, 1000, 500);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 			
-		JLabel plates = new JLabel(new ImageIcon("..\\Chapter10\\plates.gif"));
+		JLabel plates = new JLabel(new ImageIcon("..\\Chapter10\\src\\plates.gif"));
 		plates.setBackground(Color.ORANGE);
 		plates.setForeground(SystemColor.activeCaption);
 		plates.setOpaque(true);
 		plates.setBounds(60,130,514,146);
 		frame.getContentPane().add(plates);
 		
-		JLabel prize = new JLabel(new ImageIcon("..\\Chapter10\\placeholder.gif"));
+		JLabel prize = new JLabel(new ImageIcon("..\\Chapter10\\src\\placeholder.gif"));
 		prize.setBackground(Color.ORANGE);
 		prize.setBounds(60,319,514,100);
 		prize.setOpaque(true);
@@ -103,7 +95,7 @@ public class BreakAPlate
 		{
 			public void actionPerformed(ActionEvent e) 
 			{
-				if (getClicked() == true)
+				if (clicked == true)
 				{
 					btn.setText("Restart");
 			        int plateOne = (int)(2 * Math.random() + 0);
@@ -122,7 +114,7 @@ public class BreakAPlate
 			        	prize.setIcon(sticker);
 			        }
 			        
-			        setClicked(false);
+			        clicked = false;
 				}	
 				
 				else
@@ -130,7 +122,7 @@ public class BreakAPlate
 					btn.setText("Break");
 					plates.setIcon(freshPlates);
 					prize.setIcon(noImage);
-					setClicked(true);
+					clicked = true;
 				}
 			}
 		});				
