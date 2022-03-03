@@ -36,7 +36,7 @@ int userNum ;
 		/**
 		 * Initialize the contents of the frame.
 		 */
-		private void initialize() {
+		private void initialize() {               //Frame and making of display 
 			frame = new JFrame();
 			frame.getContentPane().setBackground(Color.PINK);
 			frame.setBackground(Color.YELLOW);
@@ -67,7 +67,7 @@ int userNum ;
 			YesNo.setBounds(127, 83, 208, 23);
 			panel.add(YesNo);
 			
-			JButton CheckButton = new JButton("Check divisiblity");
+			JButton CheckButton = new JButton("Check divisiblity");// making button run when pressed with actionListner
 			CheckButton.addActionListener(new ActionListener() {
 				
 				
