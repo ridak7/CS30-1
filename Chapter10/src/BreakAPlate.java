@@ -2,26 +2,26 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 
-//I just made thsi change
 
 public class BreakAPlate
 {
-
+    
 	private JFrame frame;
 	private boolean clicked;
-	ImageIcon allPlates = new ImageIcon("..\\Chapter10\\src\\placeholder.gif");
+	ImageIcon ThreePlates = new ImageIcon("..\\Chapter10\\src\\plates.gif");//inserting image
 	
-	ImageIcon twoPlates = new ImageIcon("..\\Chapter10\\src\\plates_all_broken.gif");
-	ImageIcon noImage = new ImageIcon("..\\Chapter10\\src\\plates_two_broken.gif");
-	ImageIcon sticker = new ImageIcon("..\\Chapter10\\src\\plates.gif");
+	ImageIcon twoPlates = new ImageIcon("..\\Chapter10\\src\\plates_two_broken.gif");//inserting image
+	ImageIcon noImage = new ImageIcon("..\\Chapter10\\src\\placeholder.gif");//inserting image
+	ImageIcon sticker = new ImageIcon("..\\Chapter10\\src\\sticker.gif");//inserting image
 	
-	ImageIcon freshPlates = new ImageIcon("..\\Chapter10\\src\\sticker.gif");
-	ImageIcon tigerPlush =  new ImageIcon("..\\Chapter10\\src\\tiger_plush.gif");
+	ImageIcon AllBroken = new ImageIcon("..\\Chapter10\\src\\plates_all_broken.gif");//inserting image
+	ImageIcon tiger =  new ImageIcon("..\\Chapter10\\src\\tiger_plush.gif");//inserting image
 	
 	/**
 	 * Create the application.
+	 * 
 	 */
-	public BreakAPlate() 
+	public BreakAPlate()//
 	{
 		initialize();
 		clicked = true;
@@ -29,9 +29,7 @@ public class BreakAPlate
 	
      
 	
-	/**
-	 * Launch the application.
-	 */	
+	
 	public static void main(String[] args) 
 	{
 		EventQueue.invokeLater(new Runnable() 
@@ -55,7 +53,7 @@ public class BreakAPlate
 	/**
 	 * Initialize the contents of the frame.
 	 */
-	private void initialize() 
+	private void initialize() //Making of frame/design
 	{
 		frame = new JFrame();
 		frame.getContentPane().setBackground(Color.LIGHT_GRAY);
@@ -67,19 +65,19 @@ public class BreakAPlate
 		plates.setBackground(Color.ORANGE);
 		plates.setForeground(SystemColor.activeCaption);
 		plates.setOpaque(true);
-		plates.setBounds(60,130,514,146);
+		plates.setBounds(10,119,514,146);
 		frame.getContentPane().add(plates);
 		
 		JLabel prize = new JLabel(new ImageIcon("..\\Chapter10\\src\\placeholder.gif"));
 		prize.setBackground(Color.ORANGE);
-		prize.setBounds(60,319,514,100);
+		prize.setBounds(10,253,514,100);
 		prize.setOpaque(true);
 		frame.getContentPane().add(prize);
 		
 		JButton btn = new JButton("Break");
 		btn.setBackground(Color.RED);
 		btn.setFont(new Font("Tahoma", Font.PLAIN, 21));
-		btn.setBounds(60, 276, 514, 42);
+		btn.setBounds(575, 135, 192, 130);
 		frame.getContentPane().add(btn);
 		
 		JLabel titleLabel = new JLabel("Break the Plates");
@@ -88,7 +86,7 @@ public class BreakAPlate
 		titleLabel.setFont(new Font("Tahoma", Font.PLAIN, 30));
 		titleLabel.setOpaque(true);
 		titleLabel.setBackground(Color.ORANGE);
-		titleLabel.setBounds(60, 46, 514, 83);
+		titleLabel.setBounds(10, 39, 514, 83);
 		frame.getContentPane().add(titleLabel);
 		
 		btn.addActionListener(new ActionListener() 
@@ -104,8 +102,8 @@ public class BreakAPlate
 			        
 			        if (plateOne == plateTwo && plateOne == plateThree)
 			        {
-			        	plates.setIcon(allPlates);
-			        	prize.setIcon(tigerPlush);
+			        	plates.setIcon(AllBroken);
+			        	prize.setIcon(tiger);
 			        }
 			        
 			        else
@@ -120,7 +118,7 @@ public class BreakAPlate
 				else
 				{
 					btn.setText("Break");
-					plates.setIcon(freshPlates);
+					plates.setIcon(ThreePlates);
 					prize.setIcon(noImage);
 					clicked = true;
 				}
