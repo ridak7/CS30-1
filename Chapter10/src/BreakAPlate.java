@@ -21,10 +21,10 @@ public class BreakAPlate
 	 * Create the application.
 	 * 
 	 */
-	public BreakAPlate()//
+	public BreakAPlate()
 	{
 		initialize();
-		clicked = true;
+		clicked = true;// making clicked equals to true
 	}
 	
      
@@ -53,7 +53,7 @@ public class BreakAPlate
 	/**
 	 * Initialize the contents of the frame.
 	 */
-	private void initialize() //Making of frame/design
+	private void initialize()                //Making of frame/design
 	{
 		frame = new JFrame();
 		frame.getContentPane().setBackground(Color.LIGHT_GRAY);
@@ -89,24 +89,24 @@ public class BreakAPlate
 		titleLabel.setBounds(10, 39, 514, 83);
 		frame.getContentPane().add(titleLabel);
 		
-		btn.addActionListener(new ActionListener() 
+		btn.addActionListener(new ActionListener()// ActionListner
 		{
 			public void actionPerformed(ActionEvent e) 
 			{
-				if (clicked == true)
+				if (clicked == true)     // Random numbers code used to randomly generate plates 1,2,3
 				{
 					btn.setText("Restart");
 			        int plateOne = (int)(2 * Math.random() + 0);
 			        int plateTwo = (int)(2 * Math.random() + 0);
 			        int plateThree = (int)(2 * Math.random() + 0);
 			        
-			        if (plateOne == plateTwo && plateOne == plateThree)
+			        if (plateOne == plateTwo && plateOne == plateThree)  //showing that if all plates are broken show tiger
 			        {
 			        	plates.setIcon(AllBroken);
 			        	prize.setIcon(tiger);
 			        }
 			        
-			        else
+			        else   //basically saying if 2 plates are broken show sticker
 			        {
 			        	plates.setIcon(twoPlates);
 			        	prize.setIcon(sticker);
@@ -115,7 +115,7 @@ public class BreakAPlate
 			        clicked = false;
 				}	
 				
-				else
+				else// Showing the defult starting point with 3 plates,no image the bottom, and break text
 				{
 					btn.setText("Break");
 					plates.setIcon(ThreePlates);
