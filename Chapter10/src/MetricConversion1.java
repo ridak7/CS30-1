@@ -10,6 +10,20 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
 
+/*
+
+Program: MetricConversion.java          Last Date of this Revision: February 25, 2022
+
+Purpose: For users to enter intergers and convert them to the options given 
+
+Author: Muhammad Hafeez, 
+School: CHHS
+Course: Computer Science 30 
+ 
+
+*/
+
+
 public class MetricConversion1 {
 
 	private JFrame frame;
@@ -49,7 +63,7 @@ public class MetricConversion1 {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JLabel lb = new JLabel("Enter Interger");
+		JLabel lb = new JLabel("Enter Interger");//Allowing user to enter interger
 		lb.setBounds(40, 44, 154, 47);
 		frame.getContentPane().add(lb);
 		
@@ -58,8 +72,8 @@ public class MetricConversion1 {
 		frame.getContentPane().add(a2);
 		a2.setColumns(10);
 		
-		JComboBox cb2 = new JComboBox();
-		cb2.setModel(new DefaultComboBoxModel(new String[] {"Choose one","In to cm", "Feet to Meters", "Gallons to Liters ", "Pounds to Kg"}));//Added options in comboBox for user to select
+ JComboBox cb2 = new JComboBox();
+ cb2.setModel(new DefaultComboBoxModel(new String[] {"Choose one","In to cm", "Feet to Meters", "Gallons to Liters ", "Pounds to Kg"}));//Added options in comboBox for user to select
 		cb2.setBounds(145, 102, 136, 22);
 		frame.getContentPane().add(cb2);
 		

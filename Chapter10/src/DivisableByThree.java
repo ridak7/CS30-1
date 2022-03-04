@@ -3,6 +3,19 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.Color;
 
+/*
+
+Program: DivisableByThree.java          Last Date of this Revision: February 25, 2022
+
+Purpose: Allowing users to enter numbers and letting them know if it is divisable by 3 or not
+
+Author: Muhammad Hafeez, 
+School: CHHS
+Course: Computer Science 30 
+ 
+
+*/
+
 public class DivisableByThree {
 
 private JFrame frame;
@@ -78,7 +91,7 @@ int userNum ;
 			  userNum = Integer.parseInt(userIn); //converting the users string to an integer so that we can perform division on it
 						  
 			 if (userNum % 3 == 0) {
-			 YesNo.setText("The number is divisable by 3");  // the part where it is divisable by 3
+			 YesNo.setText("The number is divisable by 3");  // the part where if it is divisable by 3 it will display that
 			 }
 					  else{
 			 YesNo.setText("The number is not divisable by 3"); //the case where it is not divisable by three 
