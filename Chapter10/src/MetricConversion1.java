@@ -40,7 +40,7 @@ public class MetricConversion1 {
 	}
 
 	/**
-	 * Initialize the contents of the frame.
+	 * Initialize the contents of the frame. //making frame/display
 	 */
 	private void initialize() {
 		frame = new JFrame();
@@ -59,42 +59,43 @@ public class MetricConversion1 {
 		a2.setColumns(10);
 		
 		JComboBox cb2 = new JComboBox();
-		cb2.setModel(new DefaultComboBoxModel(new String[] {"Choose one","In to cm", "Feet to Meters", "Gallons to Liters ", "Pounds to Kg"}));
+		cb2.setModel(new DefaultComboBoxModel(new String[] {"Choose one","In to cm", "Feet to Meters", "Gallons to Liters ", "Pounds to Kg"}));//Added options in comboBox for user to select
 		cb2.setBounds(145, 102, 136, 22);
 		frame.getContentPane().add(cb2);
 		
-		JLabel a1 = new JLabel("Final Answer Displayed Here");
+		JLabel a1 = new JLabel("Final Answer Displayed Here");//Telling user where answer is displayed
 		a1.setBounds(145, 171, 148, 14);
 		frame.getContentPane().add(a1);
 		
-		JButton b1 = new JButton("Convert");
+		JButton b1 = new JButton("Convert");// button allowing user to convert the options with help of action listner
 		b1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
-				 double itc =2.54; 
-				 double ftm =0.3048;
-			     double gtl=4.5461;
+				 double itc =2.54; // conversion formula for in to cm
+				 double ftm =0.3048;//conversion formula for ft to m
+			     double gtl=4.5461;//conversion formula for gallons to liters
+
 			     double ptk=0.4536;
 				     								          
      String user1 = a2.getText();
 		          				     
-     if((a2.getText().equals("")) || ((cb2.getSelectedItem().equals("Choose one"))))
+     if((a2.getText().equals("")) || ((cb2.getSelectedItem().equals("Choose one"))))//code for when user selects options 
 								          {
-     String value=String.format("CHOOSE A CONVERSION TYPE");  a1.setText(value);
+     String value=String.format("CHOOSE A CONVERSION TYPE");  a1.setText(value);// 
 								          }
      else if((a2.getText().equals("")))
 									      {
-     String value=String.format("ENTER A NUMBER");
+     String value=String.format("ENTER A NUMBER");// Tells user to enter a number 
      a1.setText(value);
 									      }
-     else if(cb2.getSelectedItem().equals("In to cm"))
+     else if(cb2.getSelectedItem().equals("In to cm"))//Does conversion for in to cm
 										  {
 	double metric1 =Double.parseDouble(a2.getText());
 	double metric2 = itc*metric1; 
 	String value=String.format("%.2f",metric2);
 	 a1.setText(value);
 										  }
-	else if(cb2.getSelectedItem().equals("Feet to Meters"))
+	else if(cb2.getSelectedItem().equals("Feet to Meters"))//Does conversion for Ft to M
 										  {
     double metric1 =Double.parseDouble(a2.getText());
     double metric2 = ftm*metric1;
@@ -102,14 +103,14 @@ public class MetricConversion1 {
 	 a1.setText(value);
       }
 											    	  	    	
-	else if(cb2.getSelectedItem().equals("Gallons to Liters"))
+	else if(cb2.getSelectedItem().equals("Gallons to Liters"))//Does conversion for Gallons to Liters
 		 {
 		double metric1 =Double.parseDouble(a2.getText());
 		double metric2 = gtl*metric1;
 		 String value=String.format("%.3f",metric2);
 		 a1.setText(value);
 		}
-	 else if(cb2.getSelectedItem().equals("Pounds to Kg"))
+	 else if(cb2.getSelectedItem().equals("Pounds to Kg"))// //Does conversion for Pounds to Kg
 	 {
 	 double metric1 =Double.parseDouble(a2.getText());
 	 double metric2 = ptk*metric1;
