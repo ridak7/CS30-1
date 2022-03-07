@@ -2,7 +2,7 @@ import javax.swing.*;
 
 /*
 
-Program: BreakAPlate.java          Last Date of this Revision: February 25, 2022
+Program: BreakAPlate.java          Last Date of this Revision: February 26, 2022
 
 Purpose: A game that if you break all the plates displayed you get a prize
 
