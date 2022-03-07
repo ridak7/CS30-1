@@ -44,7 +44,7 @@ public class BreakAPlate
      
 	
 	
-	public static void main(String[] args) 
+	public static void main(String[] args) // Launches application
 	{
 		EventQueue.invokeLater(new Runnable() 
 		{
