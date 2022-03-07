@@ -73,7 +73,7 @@ public class MetricConversion1 {
 		a2.setColumns(10);
 		
  JComboBox cb2 = new JComboBox();
- cb2.setModel(new DefaultComboBoxModel(new String[] {"Choose one","In to cm", "Feet to Meters", "Gallons to Liters ", "Pounds to Kg"}));//Added options in comboBox for user to select
+ cb2.setModel(new DefaultComboBoxModel(new String[] {"Choose one","In to cm", "Feet to Meters", "Gallons to Liters", "Pounds to Kg"}));//Added options in comboBox for user to select
 		cb2.setBounds(145, 102, 136, 22);
 		frame.getContentPane().add(cb2);
 		
@@ -107,14 +107,14 @@ public class MetricConversion1 {
 	double metric1 =Double.parseDouble(a2.getText());
 	double metric2 = itc*metric1; 
 	String value=String.format("%.2f",metric2);
-	 a1.setText(value);
+	 a1.setText(value+ " centimeters");
 										  }
 	else if(cb2.getSelectedItem().equals("Feet to Meters"))//Does conversion for Ft to M
 										  {
     double metric1 =Double.parseDouble(a2.getText());
     double metric2 = ftm*metric1;
 	  String value=String.format("%.3f",metric2);
-	 a1.setText(value);
+	 a1.setText(value + " Meters");
       }
 											    	  	    	
 	else if(cb2.getSelectedItem().equals("Gallons to Liters"))//Does conversion for Gallons to Liters
@@ -122,14 +122,15 @@ public class MetricConversion1 {
 		double metric1 =Double.parseDouble(a2.getText());
 		double metric2 = gtl*metric1;
 		 String value=String.format("%.3f",metric2);
-		 a1.setText(value);
+		 a1.setText(value + " Liters");
+		 
 		}
 	 else if(cb2.getSelectedItem().equals("Pounds to Kg"))// //Does conversion for Pounds to Kg
 	 {
 	 double metric1 =Double.parseDouble(a2.getText());
 	 double metric2 = ptk*metric1;
 	 String value=String.format("%.3f",metric2);
-	a1.setText(value);
+	a1.setText(value + " Killograms");
     }
 										      		               
 	 }
