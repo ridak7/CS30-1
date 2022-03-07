@@ -13,7 +13,6 @@ Author: Muhammad Hafeez,
 School: CHHS
 Course: Computer Science 30 
  
-
 */
 
 public class DivisableByThree {

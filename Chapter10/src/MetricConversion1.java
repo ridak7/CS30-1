@@ -25,6 +25,7 @@ Course: Computer Science 30
 
 
 public class MetricConversion1 {
+	
 
 	private JFrame frame;
 	private JTextField a2;

@@ -31,6 +31,7 @@ public class BreakAPlate
 	ImageIcon AllBroken = new ImageIcon("..\\Chapter10\\src\\plates_all_broken.gif");//inserting image
 	ImageIcon tiger =  new ImageIcon("..\\Chapter10\\src\\tiger_plush.gif");//inserting image
 	
+	
 	/**
 	 * Create the application.
 	 * 
