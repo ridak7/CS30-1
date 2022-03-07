@@ -14,7 +14,7 @@ import java.awt.Color;
 
 Program: MetricConversion.java          Last Date of this Revision: February 25, 2022
 
-Purpose: For users to enter intergers and convert them to the options given 
+Purpose: A application that allows user to enter a number and then select conversion typewhich will then do coversion and display answer
 
 Author: Muhammad Hafeez, 
 School: CHHS

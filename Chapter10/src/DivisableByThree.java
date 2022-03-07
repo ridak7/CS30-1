@@ -7,7 +7,7 @@ import java.awt.Color;
 
 Program: DivisableByThree.java          Last Date of this Revision: February 25, 2022
 
-Purpose: Allowing users to enter numbers and letting them know if it is divisable by 3 or not
+Purpose: An application that prompts the user for an integer then displays a message if the integer is divisable by 3 or not when clciked
 
 Author: Muhammad Hafeez, 
 School: CHHS
