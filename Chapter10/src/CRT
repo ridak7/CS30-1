@@ -1,11 +1,11 @@
    1)It is a Graphical user interface which is basically a display with things like frames and button and it allows users to do activities and interact on
 
-   2)Basically it's done by the user clicking things like the button or etc which then runs the code in the event handler.
+   2)Basically it's done by the user clicking things like the button or etc which then runs the code in the event handler. //does not answer the question
 
-   3)Yes you can add it to the frame but when you do that you also add it to the panel by default which allows you to add on things to it like string, itc.
+   3)Yes you can add it to the frame but when you do that you also add it to the panel by default which allows you to add on things to it like string, itc.//Incorrect
 
-   4)Yes it can if you add things like actionlisteners
+   4)Yes it can if you add things like actionlisteners //Incorrect
 
-   5)So it runs properly without errors
+   5)So it runs properly without errors //Incorrect
 
-   6)A label can’t respond to actions while a button can 
+   6)A label canâ€™t respond to actions while a button can //Incorrect
